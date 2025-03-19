@@ -56,7 +56,7 @@ header {
     padding-bottom: 16px;
 
     font-size: 14px;
-    color: var(--TextTertiary);
+    color: var(--TextSecondary);
 }
 
 .lyric {
