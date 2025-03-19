@@ -1,0 +1,36 @@
+* {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "GRAD" 0;
+
+    color: var(--TextPrimary);
+}
+
+.regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+#logo {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.caption {
+    font-size: 12px;
+    color: var(--TextTertiary);
+}
+
+.footnote {
+    font-size: 14px;
+    color: var(--TextTertiary);
+}
+
+.trailing {
+    text-align: end;
+}

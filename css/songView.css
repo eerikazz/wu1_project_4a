@@ -1,0 +1,24 @@
+.mainSongContainer {
+    grid-column: 2 / span 3;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: max-content;
+
+    gap: 32px;
+}
+
+#headerImg {
+    aspect-ratio: 1;
+    width: 25%;
+}
+
+.headerBody {
+    flex-grow: 1;
+}
