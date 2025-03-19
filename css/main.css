@@ -1,9 +1,15 @@
 :root {
     --bg: hsl(0, 0%, 0%);
+
     --TextPrimary: hsl(0, 0%, 100%);
     --TextSecondary: hsla(0, 0%, 100%, 0.64);
     --TextTertiary: hsla(0, 0%, 100%, 0.48);
+
     --IsClickable: hsla(0, 0%, 100%, 0.64);
+
+    --Small: 0.5rem;
+    --Medium: 1rem;
+    --Large: 2rem;
 }
 
 * {
@@ -37,6 +43,8 @@ nav {
 main {
     height: 100%;
 
+    overflow: scroll;
+
     display: grid;
     grid-template-columns: repeat(5, minmax(128px, 256px));
     gap: 32px;
@@ -44,6 +52,7 @@ main {
 
 footer {
     padding: 32px;
+    
     justify-content: space-between;
     align-items: center;
     gap: 32px;
@@ -56,6 +65,18 @@ footer {
 .container {
     display: flex;
     flex-direction: column;
+}
+
+.gapSmall {
+    gap: var(--Small);
+}
+
+.gapMedium {
+    gap: var(--Medium);
+}
+
+.gapLarge {
+    gap: var(--Large);
 }
 
 .center {

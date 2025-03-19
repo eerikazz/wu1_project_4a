@@ -3,22 +3,63 @@
 
     height: 100%;
 
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
+    gap: 64px;
 }
 
 header {
-    width: 100%;
-    height: max-content;
-
-    gap: 32px;
+    height: min-content;
 }
 
 #headerImg {
     aspect-ratio: 1;
-    width: 25%;
+    box-sizing: content-box;
 }
 
 .headerBody {
+    padding: 16px;
+
     flex-grow: 1;
+    height: max-content;
+}
+
+.lyricsCon {
+    height: 100%;
+}
+
+.musicAppLinkBtn {
+    padding: 8px 16px;
+
+    border-radius: 32px;
+    border: 1px solid #FFFFFF16;
+
+    color: var(--TextPrimary);
+    background-color: #FFFFFF08;
+
+    font-size: 14px;
+}
+
+.musicAppLinkBtn:hover {
+    background-color: #FFFFFF16;
+}
+
+
+.lyricContainer {
+    padding-left: 32px;
+    border-left: 1px solid #FFFFFF16;
+}
+
+.lyricType {
+    padding-bottom: 16px;
+
+    font-size: 14px;
+    color: var(--TextTertiary);
+}
+
+.lyric {
+    font-size: 24px;
+    font-weight: 600;
 }
