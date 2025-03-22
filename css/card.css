@@ -1,8 +1,14 @@
 .card {
     position: relative;
 
+    padding: 8px;
+
+    border-radius: 24px;
+
     height: max-content;
-    gap: 16px;
+    gap: 8px;
+
+    transition: background-color 0.4s;
 }
 
 .cardImgBlur {
@@ -13,18 +19,23 @@
 
     width: 100%;
 
-    filter: blur(256px);
+    filter: blur(128px);
     transform: rotate(45deg);
 
     z-index: -1;
 }
 
-.cardImg {
+.img {
     aspect-ratio: 1;
-    width: 100%;
 
     border-radius: 16px;
-    border: 2px solid hsla(0, 0%, 100%, 0.08);
+    outline: 1px solid hsla(0, 0%, 100%, 0.08);
+}
+
+.cardImg {
+    width: 100%;
+
+    box-sizing: border-box;
 
     transform: scale(0.8) rotate3d(1, 1, 1, 8deg);
     transition: transform 0.2s;

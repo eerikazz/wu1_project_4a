@@ -7,28 +7,37 @@
 
 import Component from "/js/component.js"
 
-class SongView extends Component {
+class SavedView extends Component {
     template() {
-        const name = this.props.params.name
-        const song = window.AppData.find(item => item.name.toLowerCase() === name?.toLowerCase())
+        const name = this.props.params.name;
+        const song = window.AppData.find(item => item.name.toLowerCase() === name?.toLowerCase());
+        const isSaved = this.isSongSaved(song);
 
         return `
-            <div class="container mainSongContainer">
-                <header class="wrapper gapMedium">
-                    <img id="headerImg" src="/assets/${song.img}.jpg" alt="${song.name}">
+            <div class="container mainContentContainer">
+                <header class="gapLarge">
+                    <img class="img" id="headerImg" src="/assets/${song.img}.jpg" alt="${song.name}">
 
                     <div class="container gapLarge headerBody">
                         <div class="container gapSmall">
-                            <h2 class="title">${song.name}</h2>
+                            <div class="wrapper gapLarge">
+                                <h2 class="title songTitle">${song.name}</h2>
+                                <button class="saveBtn isClickable" id="saveBtn">
+                                    <img class="saveBtnIcon" src="/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}" alt="Save">
+                                </button>
+                            </div>
                             <div class="wrapper gapSmall">
-                                <p class="footnote">${song.artist}</p>
-                                <p class="footnote">${song.year}</p>
+                                <p class="regular footnote">${song.artist}</p>
+                                <p class="regular footnote">${song.year}</p>
                             </div>
                         </div>
 
-                        <div class="wrapper gapSmall musicAppsWrapper">
+                        <div class="wrapper gapSmall">
                             ${song.links.map(link =>`
-                                <a class="musicAppLinkBtn regular" href="${link.url}" target="_blank">${link.service}</a>
+                                <a class="musicAppLinkBtn regular isClickable" href="${link.url}" target="_blank">
+                                    <img class="musicAppLogo" src="/assets/logos/${link.service}.svg" alt="${link.service}">
+                                    <span class="regular">${link.service}</span>
+                                </a>
                             `).join("")}
                         </div>
                     </div>
@@ -44,27 +53,49 @@ class SongView extends Component {
                     </section>
                 `).join("")}
             </div>
-        `
+        `;
     }
 
     setup() {
-        // Get references to the header and headerBody elements
-        const header = this.element.querySelector('header');
-        const headerBody = this.element.querySelector('.headerBody');
+        const name = this.props.params.name;
+        const song = window.AppData.find(item => item.name.toLowerCase() === name?.toLowerCase());
+        const saveBtn = document.querySelector("#saveBtn");
 
-        // Function to update the header height
-        const updateHeaderHeight = () => {
-            const headerBodyHeight = headerBody.offsetHeight;
-            header.style.height = `${headerBodyHeight}px`;
+        if (!song || !saveBtn) return;
+
+        const updateButtonIcon = () => {
+            const isSaved = this.isSongSaved(song);
+            saveBtn.querySelector(".saveBtnIcon").src = `/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}`;
         };
 
-        // Initial call to set the height
-        updateHeaderHeight();
+        saveBtn.addEventListener("click", () => {
+            if (this.isSongSaved(song)) {
+                this.removeSong(song);
+            } else {
+                this.saveSong(song);
+            }
+            updateButtonIcon();
+        });
 
-        // Optionally, you can add a resize observer to handle dynamic changes
-        const resizeObserver = new ResizeObserver(updateHeaderHeight);
-        resizeObserver.observe(headerBody);
+        updateButtonIcon(); // Set initial state
+    }
+
+    isSongSaved(song) {
+        const savedSongs = JSON.parse(localStorage.getItem("savedSongs")) || [];
+        return savedSongs.some(saved => saved.name === song.name);
+    }
+
+    saveSong(song) {
+        let savedSongs = JSON.parse(localStorage.getItem("savedSongs")) || [];
+        savedSongs.push(song);
+        localStorage.setItem("savedSongs", JSON.stringify(savedSongs));
+    }
+
+    removeSong(song) {
+        let savedSongs = JSON.parse(localStorage.getItem("savedSongs")) || [];
+        savedSongs = savedSongs.filter(saved => saved.name !== song.name);
+        localStorage.setItem("savedSongs", JSON.stringify(savedSongs));
     }
 }
 
-export default SongView
+export default SavedView;

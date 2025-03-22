@@ -1,11 +1,11 @@
 :root {
-    --bg: hsl(0, 0%, 0%);
+    --bg: hsl(0, 0%, 4%);
 
     --TextPrimary: hsl(0, 0%, 100%);
     --TextSecondary: hsla(0, 0%, 100%, 0.64);
     --TextTertiary: hsla(0, 0%, 100%, 0.48);
 
-    --IsClickable: hsla(0, 0%, 100%, 0.64);
+    --IsClickable: hsla(0, 0%, 100%, 0.08);
 
     --Small: 0.5rem;
     --Medium: 1rem;
@@ -21,7 +21,8 @@
 
 body {
     margin: 0 auto;
-    padding: 32px;
+
+    min-height: 100vh;
 
     box-sizing: border-box;
 
@@ -29,13 +30,23 @@ body {
 
     background-color: var(--bg);
 
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    align-content: center;
 }
 
 nav {
-    padding: 32px;
+    top: 0;
+    position: sticky;
+
+    z-index: 1;
+
+    padding: 64px 32px;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); 
+
+    align-items: center;
     justify-content: space-between;
     gap: 32px;
 }
@@ -43,19 +54,51 @@ nav {
 main {
     height: 100%;
 
-    overflow: scroll;
+    padding: 0 32px;
+
+    box-sizing: border-box;
 
     display: grid;
-    grid-template-columns: repeat(5, minmax(128px, 256px));
-    gap: 32px;
+    grid-template-columns: repeat(1, minmax(128px, 1fr));
+    gap: 4px;
+}
+
+.mainContentContainer {
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 }
 
 footer {
-    padding: 32px;
+    padding: 64px 32px;
 
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+}
+
+.isClickable {
+    padding: var(--Small);
+
+    border-radius: 24px;
+    border: 1px solid hsla(0, 0%, 100%, 0);
+
+    backdrop-filter: blur(var(--Small));
+
+    transition: background-color 0.4s;
+}
+
+.isClickable:hover {
+    background-color: var(--IsClickable);
+    border-color: var(--IsClickable);
+    transition: background-color 0.4s;
+}
+
+.btn {
+    padding: var(--Small) var(--Medium);
+    font-size: 14px;
 }
 
 .wrapper {
@@ -83,6 +126,40 @@ footer {
     align-items: center;
 }
 
-@media (max-width: 512px) {
+@media (min-width: 512px) {
+    nav {
+        padding: 64px;
+    }
 
+    footer {
+        padding: 64px;
+    }
+
+    main {
+        grid-template-columns: repeat(2, minmax(128px, 1fr));
+    }
+
+    .mainContentContainer {
+        grid-column: 1 /span 2;
+    }
+}
+
+@media (min-width: 720px) {
+    main {
+        grid-template-columns: repeat(3, minmax(128px, 1fr));
+    }
+
+    .mainContentContainer {
+        grid-column: 1 /span 3;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(5, minmax(128px, 1fr));
+    }
+
+    .mainContentContainer {
+        grid-column: 2 /span 3;
+    }
 }
