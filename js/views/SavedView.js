@@ -5,7 +5,7 @@
 // Copyright 2025, All rights reserved.
 //
 
-import Component from "/wu1_project_4a/js/component.js"
+import Component from "/js/component.js"
 
 class SavedView extends Component {
     template() {
@@ -22,11 +22,11 @@ class SavedView extends Component {
 
         return `
             ${savedSongs.map(song =>`
-                <a class="card isClickable" href="/wu1_project_4a/#/${song.name}">
-                    <img class="cardImgBlur" src="/wu1_project_4a/assets/${song.img}.jpg" alt="${song.name}">
+                <a class="card isClickable" href="/#/${song.name}">
+                    <img class="cardImgBlur" src="/assets/${song.img}.jpg" alt="${song.name}">
 
                     <div class="container gapSmall cardBody">
-                        <img class="img cardImg" src="/wu1_project_4a/assets/${song.img}.jpg" alt="${song.name}">
+                        <img class="img cardImg" src="/assets/${song.img}.jpg" alt="${song.name}">
                         <div class="container cardFooter">
                             <h3>${song.name}</h3>
                             <p class="regular caption">${song.artist}</p>
