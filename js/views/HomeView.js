@@ -11,7 +11,7 @@ class HomeView extends Component {
     template() {
         return `
             ${AppData.map(song =>`
-                <a class="card isClickable" href="/#/${song.name}">
+                <a class="card isClickable" href="/wu1_project_4a/#/${song.name}">
                     <img class="cardImgBlur" src="/wu1_project_4a/assets/${song.img}.jpg" alt="${song.name}">
 
                     <div class="container gapSmall cardBody">
