@@ -1,4 +1,11 @@
-import Component from "/js/component.js"
+//
+// SavedView.js
+//
+// Created by Erikas Janusauskas on 2025-03-12
+// Copyright 2025, All rights reserved.
+//
+
+import Component from "/wu1_project_4a/js/component.js"
 
 class SavedView extends Component {
     template() {

@@ -5,7 +5,7 @@
 // Copyright 2025, All rights reserved.
 //
 
-import Component from "/js/component.js"
+import Component from "/wu1_project_4a/js/component.js"
 
 class PrivacyView extends Component {
     template() {
