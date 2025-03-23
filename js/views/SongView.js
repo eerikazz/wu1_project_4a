@@ -47,14 +47,12 @@ class SongView extends Component {
                 </header>
 
                 ${song.lyrics.map(lyric =>`
-                    <section class="container gapMedium">
+                    <section class="container gapSmall lyricContainer">
                         <h3 class="lyricType regular">${lyric.type}</h3>
 
-                        <div class="container gapSmall lyricContainer">
-                            ${lyric.lines.map(line =>`
-                                <p class="lyric regular">${line}</p>
-                            `).join("")}
-                        </div>
+                        ${lyric.lines.map(line =>`
+                            <p class="lyric regular">${line}</p>
+                        `).join("")}
                     </section>
                 `).join("")}
             </div>

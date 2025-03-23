@@ -240,4 +240,340 @@ window.AppData = [
             }
         ]
     },
+    {
+        "img": "supercut",
+        "name": "Supercut",
+        "artist": "Lorde",
+        "year": "2017",
+        "links": [
+            {
+                "service": "Spotify",
+                "url": "https://open.spotify.com/track/6K8VQ84MqhsoakN5MjrnVR?si=82a2de304db84efc"
+            },
+            {
+                "service": "YT Music",
+                "url": "https://music.youtube.com/watch?v=KxSzt51xnkU&si=sBTKGX2fbSKwEtnj"
+            }
+        ],
+        "lyrics": [
+            {
+                "type": "verse",
+                "number": 1,
+                "lines": [
+                    "In my head, I play a supercut of us",
+                    "All the magic we gave off",
+                    "All the love we had and lost",
+                    "And in my head",
+                    "The visions never stop",
+                    "These ribbons wrap me up",
+                    "But when I reach for you",
+                    "There's just a supercut"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "In your car, the radio up",
+                    "In your car, the radio up",
+                    "We keep trying to talk about us",
+                    "I'm someone you maybe might love",
+                    "I'll be your quiet afternoon crush",
+                    "Be your violent overnight rush",
+                    "Make you crazy over my touch"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "But it's just a supercut of us",
+                    "Supercut of us",
+                    "Oh it's just a supercut of us",
+                    "Supercut of us"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 2,
+                "lines": [
+                    "So I fall",
+                    "Into continents and cars",
+                    "All the stages and the stars",
+                    "I turn all of it",
+                    "To just a supercut"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "'Cause in my head (in my head, I do everything right)",
+                    "When you call (when you call, I'll forgive and not fight)",
+                    "Because ours (are the moments I play in the dark)",
+                    "We were wild and fluorescent, come home to my heart"
+                ]
+            },
+            {
+                "type": "bridge",
+                "lines": [
+                    "'Cause in my head (in my head, I do everything right)",
+                    "When you call (when you call, I'll forgive and not fight)",
+                    "Because ours (are the moments I play in the dark)",
+                    "We were wild and fluorescent, come home to my heart",
+                    "'Cause in my head (in my head, I do everything right)",
+                    "When you call (when you call, I'll forgive and not fight)",
+                    "Because ours (are the moments I play in the dark)",
+                    "We were wild and fluorescent, come home to my heart"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "But it's just a supercut of us",
+                    "Supercut of us",
+                    "Oh it's just a supercut of us",
+                    "Supercut of us"
+                ]
+            },
+            {
+                "type": "outro",
+                "lines": [
+                    "(In my head, I do everything right)",
+                    "(In my head, I do everything right)"
+                ]
+            }
+        ]
+    },
+    {
+        "img": "terapi-ar-skit",
+        "name": "Terapi är skit",
+        "artist": "Terese i kassan",
+        "year": "2025",
+        "links": [
+            {
+                "service": "Spotify",
+                "url": "https://open.spotify.com/track/0q67xo0uLVsFT7PzDWqR8b?si=96546e86b78a45bb"
+            },
+            {
+                "service": "YT Music",
+                "url": "https://music.youtube.com/watch?v=KxSzt51xnkU&si=sBTKGX2fbSKwEtnj"
+            }
+        ],
+        "lyrics": [
+            {
+                "type": "verse",
+                "number": 1,
+                "lines": [
+                    "Min första hette Hasse, en helt värdelös terapeut",
+                    "Och nummer två på listan, ja det var ju Britta",
+                    "Man ger dem massa pengar, och de sitter och håller käft",
+                    "Och jag kan säga er att Britta var en",
+                    "Så jag fick remiss till Barbro Lööf",
+                    "Hon drog bisarra teorier ur sin tjocka röv",
+                    "Och det var då jag träffa Claes",
+                    "Ett jävla as"
+                ]
+            },
+            {
+                "type": "pre chorus",
+                "lines": [
+                    "Så tack för alla gånger ni botat min ångest",
+                    "Nej juste fan det gjorde ni ju aldrig nej",
+                    "Men tack för alla hångel på samtals-schäslongen",
+                    "Hallå där psykolog-Per jag pratar med dig"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "För jag har gått i samtal sen jag fyllde elva",
+                    "Och nu kan jag med säkerhet säga er att",
+                    "Dе botar ångest noll procent av alla gånger",
+                    "Och dе gör det med flit",
+                    "Terapi är bara skit"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 2,
+                "lines": [
+                    "Tom Lindman ville bara veta vem jag låg med igår",
+                    "Och framförallt så ville han höra detaljer",
+                    "Sivan var väl gullig men vem fan vill gräva i sår",
+                    "Med Med en batik-kärring som stinker gamla alger?",
+                    "Och sämst var kanske Ann-Louise",
+                    "En jävla gris"
+                ]
+            },
+            {
+                "type": "pre chorus",
+                "lines": [
+                    "Så tack för alla gånger ni botat min ångest",
+                    "Nej juste fan det gjorde ni ju aldrig nej",
+                    "Men tack för alla hångel på samtals-schäslongen",
+                    "Hallå där psykolog-Per jag pratar med dig"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "För jag har gått i samtal sen jag fyllde elva",
+                    "Och nu kan jag med säkerhet säga er att",
+                    "Dе botar ångest noll procent av alla gånger",
+                    "Och dе gör det med flit",
+                    "Terapi är bara skit"
+                ]
+            },
+            {
+                "type": "post chorus",
+                "lines": [
+                    "Britt-Inger jävla parasit, oh-whoa",
+                    "Och tack till Bengt i synnerhet, du lärde mig allt jag nu vet",
+                    "Om tystnad och passivitet för du var jävligt bra på det",
+                    "Oavsett om de är stumma eller babblar står det klart",
+                    "Terapi är bara skit"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "För jag har gått i samtal sen jag fyllde elva",
+                    "Och nu kan jag med säkerhet säga er att",
+                    "Dе botar ångest noll procent av alla gånger",
+                    "Och dе gör det med flit",
+                    "Terapi är bara skit"
+                ]
+            },
+        ]
+    },
+    {
+        "img": "bara-bada-bastu",
+        "name": "Bara Bada Bastu",
+        "artist": "KAJ",
+        "year": "2025",
+        "links": [
+            {
+                "service": "Spotify",
+                "url": "https://open.spotify.com/track/2gThkoApt6B7ajBWZRLAVv?si=b9fe44d1ebd44e92"
+            },
+            {
+                "service": "YT Music",
+                "url": "https://music.youtube.com/watch?v=QOehBj0nCMU&si=Fo-Xk9ESJE-0lhwi"
+            }
+        ],
+        "lyrics": [
+            {
+                "type": "intro",
+                "lines": [
+                    "Nå jaa"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 1,
+                "lines": [
+                    "Klockan slår, nu är det dags",
+                    "All bekymber försvinder strax",
+                    "Bästa båoti för kropp och själ",
+                    "Fyra väggar i träpanel"
+                ]
+            },
+            {
+                "type": "bridge",
+                "lines": [
+                    "(Oh, eh-oh, eh-oh) Vedin vår värmer lika bra",
+                    "(Oh, eh-oh, eh-oh) Som tango me Arja Saijonmaa",
+                    "Yksi, kaksi, kolme, sauna"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "Vi ska bada bastu, bastu, ångon åpp och släpp all stress idag",
+                    "Bastubröder är je vi som glöder, hundra grader, nå jaa",
+                    "Bara bada bastu, bastu, heittää på så sveittin bara yr",
+                    "Oh, bada bastu, joo",
+                    "Vi ska bada bastu, bastu, ångon åpp och släpp all stress idag",
+                    "Bastubröder är je vi som glöder, hundra grader, nå jaa",
+                    "Bara bada bastu, bastu, heittää på så sveittin bara yr",
+                    "Oh, bada bastu, joo"
+                ]
+            },
+            {
+                "type": "post chorus",
+                "lines": [
+                    "Sauna",
+                    "Sauna (Jaa just, jaa)"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 2,
+                "lines": [
+                    "Häll på vattn och meir ångo nu",
+                    "Tick, tick, tack, hur läng orkar du?",
+                    "Nitti grader, vi är nästan där",
+                    "Perkele, är va på värman jär"
+                ]
+            },
+            {
+                "type": "bridge",
+                "lines": [
+                    "(Oh, eh-oh, eh-oh) Sveittin lackar, jaa, jaa",
+                    "(Oh, eh-oh, eh-oh) Yksi, kaksi, kolme, sauna"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "Vi ska bada bastu, bastu, ångon åpp och släpp all stress idag",
+                    "Bastubröder är je vi som glöder, hundra grader, nå jaa",
+                    "Bara bada bastu, bastu, heittää på så sveittin bara yr",
+                    "Oh, bada bastu, joo"
+                ]
+            },
+            {
+                "type": "post chorus",
+                "lines": [
+                    "Sauna"
+                ]
+            },
+            {
+                "type": "stick",
+                "lines": [
+                    "Bara bada bastu, bara bada bastu",
+                    "Bara bada, bara bada, bara bada bastu",
+                    "Bara bada bastu, bara bada bastu",
+                    "Bara bada, bara bada, bara bada bastu (Ei saa peittää)",
+                    "Bara bada bastu, bara bada bastu",
+                    "Bara bada, bara bada, bara bada bastu",
+                    "Bara bada bastu, bara bada bastu",
+                    "Bara bada, bara bada, bara bada bastu"
+                ]
+            },
+            {
+                "type": "chorus",
+                "lines": [
+                    "Vi ska bada bastu, bastu, ångon åpp och släpp all stress idag",
+                    "Bastubröder är je vi som glöder, hundra grader, nå jaa",
+                    "Bara bada bastu, bastu, heittää på så sveittin bara yr",
+                    "Oh, bada bastu, joo"
+                ]
+            },
+            {
+                "type": "post chorus",
+                "lines": [
+                    "Sauna"
+                ]
+            },
+            {
+                "type": "outro",
+                "lines": [
+                    "Bara bada bastu, bara bada bastu",
+                    "Bara bada, bara bada, bara bada bastu",
+                    "Bara bada bastu, bara bada bastu",
+                    "Bara bada, bara bada, bara bada bastu",
+                    "Sauna"
+                ]
+            }
+        ]
+    },
 ]

@@ -80,8 +80,7 @@ header {
 }
 
 .lyricType {
-    padding-left: 32px;
-    border-left: 1px solid #FFFFFF16;
+    padding-bottom: var(--Small);
 
     font-size: 14px;
     color: var(--TextSecondary);
