@@ -16,8 +16,8 @@ class SongView extends Component {
         return `
             <div class="container mainContentContainer">
                 <header class="gapLarge">
-                    <img class="img blurredImg" src="/assets/${song.img}.jpg" alt="${song.name}">
-                    <img class="img" id="headerImg" src="/assets/${song.img}.jpg" alt="${song.name}">
+                    <img class="img blurredImg" src="/wu1_project_4a/assets/${song.img}.jpg" alt="${song.name}">
+                    <img class="img" id="headerImg" src="/wu1_project_4a/assets/${song.img}.jpg" alt="${song.name}">
 
                     <div class="container gapLarge headerBody">
                         <div class="wrapper gapLarge">
@@ -31,14 +31,14 @@ class SongView extends Component {
                             </div>
 
                             <button class="saveBtn isClickable" id="saveBtn">
-                                <img class="saveBtnIcon" src="/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}" alt="Save">
+                                <img class="saveBtnIcon" src="/wu1_project_4a/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}" alt="Save">
                             </button>
                         </div>
 
                         <div class="wrapper gapSmall">
                             ${song.links.map(link =>`
                                 <a class="musicAppLinkBtn regular isClickable" href="${link.url}" target="_blank">
-                                    <img class="musicAppLogo" src="/assets/logos/${link.service}.svg" alt="${link.service}">
+                                    <img class="musicAppLogo" src="/wu1_project_4a/assets/logos/${link.service}.svg" alt="${link.service}">
                                     <span class="regular">${link.service}</span>
                                 </a>
                             `).join("")}
@@ -70,7 +70,7 @@ class SongView extends Component {
 
         const updateButtonIcon = () => {
             const isSaved = this.isSongSaved(song);
-            saveBtn.querySelector(".saveBtnIcon").src = `/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}`;
+            saveBtn.querySelector(".saveBtnIcon").src = `/wu1_project_4a/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}`;
         };
 
         saveBtn.addEventListener("click", () => {
