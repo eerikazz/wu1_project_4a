@@ -5,14 +5,8 @@ header {
     grid-template-columns: repeat(3, 1fr);
 }
 
-#headerImg {
-    width: 100%;
-
-    aspect-ratio: 1;
-    box-sizing: content-box;
-}
-
 .headerBody {
+    grid-row: 1;
     grid-column: 2 /span 2;
 
     padding: 16px 0;
@@ -24,8 +18,35 @@ header {
     justify-content: space-between;
 }
 
+#headerImg {
+    grid-row: 1;
+    grid-column: 1;
+
+    width: 100%;
+
+    aspect-ratio: 1;
+
+    box-sizing: content-box;
+}
+
+.blurredImg {
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+
+    z-index: -1;
+
+    width: 72%;
+
+    box-sizing: border-box;
+
+    filter: blur(128px);
+    transform: rotate(45deg);
+}
+
 .songTitle {
     flex-grow: 1;
+    font-size: 24px;
 }
 
 .lyricsCon {
@@ -59,7 +80,8 @@ header {
 }
 
 .lyricType {
-    padding-bottom: 16px;
+    padding-left: 32px;
+    border-left: 1px solid #FFFFFF16;
 
     font-size: 14px;
     color: var(--TextSecondary);
@@ -71,8 +93,13 @@ header {
 }
 
 .saveBtn {
+    aspect-ratio: 1;
+
+    border-radius: 100%;
+
     background: none;
-    display: flex;
+    display: grid;
+    place-content: center;
 }
 
 .saveBtn:hover {
@@ -80,7 +107,7 @@ header {
 }
 
 .saveBtnIcon {
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
     width: 24px;
 }
 
@@ -90,6 +117,21 @@ header {
     }
 
     .headerBody {
+        grid-column: 1;
+    }
+
+    #headerImg {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .blurredImg {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .headerBody {
+        grid-row: 2;
         grid-column: 1;
     }
 }

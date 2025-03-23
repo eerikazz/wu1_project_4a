@@ -20,13 +20,9 @@
 }
 
 body {
-    margin: 0 auto;
-
     min-height: 100vh;
 
     box-sizing: border-box;
-
-    max-width: 1280px;
 
     background-color: var(--bg);
 
@@ -52,15 +48,16 @@ nav {
 }
 
 main {
-    height: 100%;
-
+    margin: 0 auto;
     padding: 0 32px;
+
+    height: 100%;
 
     box-sizing: border-box;
 
     display: grid;
     grid-template-columns: repeat(1, minmax(128px, 1fr));
-    gap: 4px;
+    gap: var(--Small);
 }
 
 .mainContentContainer {
@@ -72,7 +69,7 @@ main {
 }
 
 footer {
-    padding: 64px 32px;
+    padding: 64px 48px;
 
     justify-content: space-between;
     align-items: center;
@@ -110,6 +107,10 @@ footer {
     flex-direction: column;
 }
 
+.gapMinimal {
+    gap: 0.25rem;
+}
+
 .gapSmall {
     gap: var(--Small);
 }
@@ -126,15 +127,15 @@ footer {
     align-items: center;
 }
 
+.cetnerHorizontally {
+    justify-content: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
 @media (min-width: 512px) {
-    nav {
-        padding: 64px;
-    }
-
-    footer {
-        padding: 64px;
-    }
-
     main {
         grid-template-columns: repeat(2, minmax(128px, 1fr));
     }
@@ -146,7 +147,7 @@ footer {
 
 @media (min-width: 720px) {
     main {
-        grid-template-columns: repeat(3, minmax(128px, 1fr));
+        grid-template-columns: repeat(3, minmax(128px, 300px));
     }
 
     .mainContentContainer {
@@ -156,10 +157,18 @@ footer {
 
 @media (min-width: 1024px) {
     main {
-        grid-template-columns: repeat(5, minmax(128px, 1fr));
+        grid-template-columns: repeat(5, minmax(128px, 300px));
     }
 
     .mainContentContainer {
         grid-column: 2 /span 3;
+    }
+
+    nav {
+        padding: 64px;
+    }
+
+    footer {
+        padding: 64px 80px;
     }
 }

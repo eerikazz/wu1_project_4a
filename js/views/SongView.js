@@ -7,7 +7,7 @@
 
 import Component from "/js/component.js"
 
-class SavedView extends Component {
+class SongView extends Component {
     template() {
         const name = this.props.params.name;
         const song = window.AppData.find(item => item.name.toLowerCase() === name?.toLowerCase());
@@ -16,20 +16,23 @@ class SavedView extends Component {
         return `
             <div class="container mainContentContainer">
                 <header class="gapLarge">
+                    <img class="img blurredImg" src="/assets/${song.img}.jpg" alt="${song.name}">
                     <img class="img" id="headerImg" src="/assets/${song.img}.jpg" alt="${song.name}">
 
                     <div class="container gapLarge headerBody">
-                        <div class="container gapSmall">
-                            <div class="wrapper gapLarge">
+                        <div class="wrapper gapLarge">
+                            <div class="container gapSmall grow">
                                 <h2 class="title songTitle">${song.name}</h2>
-                                <button class="saveBtn isClickable" id="saveBtn">
-                                    <img class="saveBtnIcon" src="/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}" alt="Save">
-                                </button>
+
+                                <div class="wrapper gapSmall">
+                                    <p class="regular footnote">${song.artist}</p>
+                                    <p class="regular footnote">${song.year}</p>
+                                </div>
                             </div>
-                            <div class="wrapper gapSmall">
-                                <p class="regular footnote">${song.artist}</p>
-                                <p class="regular footnote">${song.year}</p>
-                            </div>
+
+                            <button class="saveBtn isClickable" id="saveBtn">
+                                <img class="saveBtnIcon" src="/assets/icons/${isSaved ? "isSaved.svg" : "save.svg"}" alt="Save">
+                            </button>
                         </div>
 
                         <div class="wrapper gapSmall">
@@ -44,12 +47,14 @@ class SavedView extends Component {
                 </header>
 
                 ${song.lyrics.map(lyric =>`
-                    <section class="container gapSmall lyricContainer">
+                    <section class="container gapMedium">
                         <h3 class="lyricType regular">${lyric.type}</h3>
 
-                        ${lyric.lines.map(line =>`
-                            <p class="lyric regular">${line}</p>
-                        `).join("")}
+                        <div class="container gapSmall lyricContainer">
+                            ${lyric.lines.map(line =>`
+                                <p class="lyric regular">${line}</p>
+                            `).join("")}
+                        </div>
                     </section>
                 `).join("")}
             </div>
@@ -98,4 +103,4 @@ class SavedView extends Component {
     }
 }
 
-export default SavedView;
+export default SongView;

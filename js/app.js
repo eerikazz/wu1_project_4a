@@ -7,12 +7,16 @@
 
 import Router from "/js/router.js"
 import HomeView from "/js/views/HomeView.js"
-import SongView from "/js/views/SongView.js"
 import SavedView from "/js/views/SavedView.js"
+import TermsView from "/js/views/TermsView.js"
+import PrivacyView from "/js/views/PrivacyView.js"
+import SongView from "/js/views/SongView.js"
 
 const routes = {
     "/": HomeView,
     "/saved": SavedView,
+    "/terms": TermsView,
+    "/privacy": PrivacyView,
     "/:name": SongView
 }
 
