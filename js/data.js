@@ -428,8 +428,8 @@ window.AppData = [
                     "Britt-Inger jävla parasit, oh-whoa",
                     "Och tack till Bengt i synnerhet, du lärde mig allt jag nu vet",
                     "Om tystnad och passivitet för du var jävligt bra på det",
-                    "Oavsett om de är stumma eller babblar står det klart",
-                    "Terapi är bara skit"
+                    "stumma eller babblar står det klart",
+                    "Varje psykolog är psykopat"
                 ]
             },
             {

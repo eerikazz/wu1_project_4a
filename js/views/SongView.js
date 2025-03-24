@@ -16,8 +16,8 @@ class SongView extends Component {
         return `
             <div class="container mainContentContainer">
                 <header class="gapLarge">
-                    <img class="img blurredImg" src="/assets/${song.img}.jpg" alt="${song.name}">
-                    <img class="img" id="headerImg" src="/assets/${song.img}.jpg" alt="${song.name}">
+                    <img class="img blurredImg" src="/assets/blur/${song.img}.webp" alt="${song.name}">
+                    <img class="img" id="headerImg" src="/assets/webp/${song.img}.webp" alt="${song.name}">
 
                     <div class="container gapLarge headerBody">
                         <div class="wrapper gapLarge">
